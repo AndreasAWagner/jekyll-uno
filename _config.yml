@@ -9,12 +9,10 @@ baseurl: '/'
 author:
   name: 'Andreas Wagner'
   email: a.wagner@tum.de
-#  twitter_username: AndreasAWagner
-  facebook_username: 
-  github_username:  AndreasAWagner
-  linkedin_username:  AndreasAWagner
-  xing_username:  AndreasAWagner
-  google-schoolar_username: YVUNungAAAAJ
+  github_username: #AndreasAWagner
+  linkedin_username: AndreasAWagner
+  xing_username: AndreasAWagner
+  google-scholar_username: YVUNungAAAAJ
 
 defaults:
   -

@@ -1,11 +1,10 @@
 <span class="mobile btn-mobile-menu">
-  <i class="icon icon-list btn-mobile-menu__icon"></i>
-  <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+  <i class="fa fa-list fa-lg btn-mobile-menu__icon"></i>
+  <i class="fa fa-times-circle-o fa-2x btn-mobile-close__icon hidden"></i>
 </span>
   
 <header class="panel-cover" style="background-image: url({{ "images/cover.jpg" | prepend: site.baseurl }})">
   <div class="panel-main">
-
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
         <a href="{{ site.baseurl }}" title="link to home of {{ site.title }}">
@@ -17,20 +16,17 @@
 		  <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
 			</ul>
-          </nav>       
-          
+          </nav>             
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
 			  <li class="navigation__item"><a href="{{ site.baseurl }}publications" title="Publications of {{ site.title }}" class="blog-button">Publications</a></li>
             </ul>
           </nav>
-          
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
 			  <li class="navigation__item"><a href="{{ site.baseurl }}presentations" title="Presentations of {{ site.title }}" class="blog-button">Presentations</a></li>
             </ul>
           </nav>
-   
 <!--   
 	       <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
@@ -38,80 +34,60 @@
             </ul>
           </nav>
 -->
-		  
+        <hr class="panel-cover__divider panel-cover__divider--secondary">		  
 		<div class="navigation-wrapper">
           <nav class="cover-navigation navigation--social">
-            <ul class="navigation">
-          
-            {% if site.author.twitter_username %}
-              <!-- Twitter -->
-              <li class="navigation__item">
-                <a href="http://twitter.com/{{ site.author.twitter_username }}" title="@{{ site.author.name }} on Twitter" target="_blank">
-				  <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
-                  <span class="label">Twitter</span>
-                </a>
-              </li>
-            {% endif %}
-
-            {% if site.author.facebook_username %}
-              <!-- Facebook -->
-              <li class="navigation__item">
-                <a href="http://fb.me/{{ site.author.facebook_username }}" title="{{ site.author.name }} on Facebook" target="_blank">
-				  <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
-                  <span class="label">Facebook</span>
-                </a>
-              </li>
-            {% endif %}
-
+            <ul class="navigation">        
             {% if site.author.linkedin_username %}
               <!-- LinkedIn -->
               <li class="navigation__item">
-                <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" title="{{ site.author.name }} on LinkedIn" target="_blank">
+                <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" title="LinkedIn profile" target="_blank">
 				  <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
                   <span class="label">LinkedIn</span>
                 </a>
               </li>
             {% endif %}
-
             {% if site.author.xing_username %}
               <!-- Xing -->
               <li class="navigation__item">
-                <a href="https://xing.to/{{ site.author.xing_username }}" title="{{ site.author.name }} on Xing" target="_blank">
+                <a href="https://xing.to/{{ site.author.xing_username }}" title="Xing profile" target="_blank">
 				  <i class="fa fa-xing fa-lg" aria-hidden="true"></i>
                   <span class="label">Xing</span>
                 </a>
               </li>
             {% endif %}
-			
-            {% if site.author.google-schoolar_username %}
+            {% if site.author.google-scholar_username %}
               <!-- Xing -->
               <li class="navigation__item">
-                <a href="https://scholar.google.de/citations?&user={{ google-schoolar_username }}" title="{{ site.author.name }} on Google Scholar" target="_blank">
+                <a href="https://scholar.google.de/citations?&user={{ site.author.google-scholar_username }}" title="Google Scholar profile" target="_blank">
 				  <i class="fa fa-google fa-lg" aria-hidden="true"></i>
                   <span class="label">Google Scholar</span>
                 </a>
               </li>
-            {% endif %}
-			
+            {% endif %}	
             {% if site.author.github_username %}
               <!-- GitHub -->
               <li class="navigation__item">
-                <a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.name }} on GitHub" target="_blank">
+                <a href="https://www.github.com/{{ site.author.github_username }}" title="GitHub profile" target="_blank">
 				  <i class="fa fa-github fa-lg" aria-hidden="true"></i>
                   <span class="label">GitHub</span>
                 </a>
               </li>
             {% endif %}
-
+              <!-- TUM -->
+              <li class="navigation__item">
+                <a href="https://www.geo.bgu.tum.de/en/wagner/" title="TUM - Chair of Geodesy" target="_blank">
+				  <i class="fa fa-graduation-cap fa-lg" aria-hidden="true"></i>
+                  <span class="label">TUM</span>
+                </a>
+              </li>
               <!-- Next-Cloud -->
               <li class="navigation__item">
-			    <a href="http://cloud.awagner.net" title="Next-Cloud of {{ site.author.name }}" target="_blank">
+			    <a href="http://cloud.awagner.net" title="private Next-Cloud" target="_blank">
 				  <i class="fa fa-cloud fa-lg" aria-hidden="true"></i>
                   <span class="label">NextCloud</span>
                 </a>
-              </li>
-			
-			
+              </li>			
             {% if site.author.email %}
               <!-- Email -->
               <li class="navigation__item">
@@ -121,24 +97,12 @@
                 </a>
               </li>
             {% endif %}
-
-            <!-- RSS 
-            <li class="navigation__item">
-              <a href="{{ "feed.xml" | prepend: site.baseurl }}" title="Subscribe" target="_blank">
-                <i class="icon icon-rss"></i>
-                <span class="label">RSS</span>
-              </a>
-            </li> -->
-          
+       
             </ul>
           </nav>
-
         </div>
-
       </div>
-
     </div>
-
     <div class="panel-cover--overlay"></div>
   </div>
 </header>
